@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recibo Telefónico</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div>
+        <h1>RECIBO TELEFÓNICO</h1>
+
+        <form action="" id="calculoMinutos">
+            <label for="Minutos">Minutos de celular (10.00 MXN c/u)</label>
+            <input type="number" id="Minutos" name="Minutos" min="100" step="1" required>
+            <br>
+            <br>
+
+            <hr>
+        <div>
+            <h2>TIPO DE PLAN</h2>
+            <label for="" id="plan">Tipo de plan</label>
+            <select name="plan" id="plan" required>
+                <option value="1">Solo Telefono(100 MXN)</option>
+                <option value="2">Telefono + Internet (200 MXN)</option>
+                <option value="3">Telefono + Internet + TV(300 MXN)</option>
+                <br>
+                <br>
+
+            <hr>
+        </div>
+
+        <div>
+            <h2>Otros Servicios</h2>
+            <label for="" id="Extras">Otros Servicios</label> 
+
+            <input type="checkbox" name="servicio1" id="servicio1">
+            <checkbox name="servicio1" id="servicio1" value="50">Antivirus (50 MXN)</checkbox>
+
+            <input type="checkbox" name="servicio2" id="servicio2">
+            <checkbox name="servicio2" id="servicio2" value="150">Servicios de Nube (150 MXN)</checkbox>
+
+            <input type="checkbox" name="servicio3" id="servicio3">
+            <checkbox name="servicio3" id="servicio3" value="250">Web Services (250 MXN)</checkbox>
+            <br>
+            <br>
+            <hr>
+        </div>
+
+
+            <h2>PAQUETES</h2>
+            <label for="">Paquetes</label>
+            <br>
+            <input type="radio" name="paquete" id="paquete1" value="0" required>
+            <label for="paquete1">Residencial </label>
+            <br>
+            <input type="radio" name="paquete" id="paquete2" value="0">
+            <label for="paquete2">PYMES </label>
+            <br>
+            <input type="radio" name="paquete" id="paquete3" value="0">
+            <label for="paquete3">Empresas </label>
+
+        </form>
+    </div>
+    
     
 </body>
 </html>
